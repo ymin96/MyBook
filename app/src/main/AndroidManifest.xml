@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.ac.jbnu.se.mybook" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="kr.ac.jbnu.se.com.kunsan.mybook.activities.BookMainPage"
+            android:label="@string/title_activity_book_mainpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="kr.ac.jbnu.se.com.kunsan.mybook.activities.BookListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="kr.ac.jbnu.se.com.kunsan.mybook.activities.BookDetailActivity"
+            android:label="@string/title_activity_book_detail" >
+        </activity>
+        <activity
+            android:name="kr.ac.jbnu.se.com.kunsan.mybook.activities.ImageListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="kr.ac.jbnu.se.com.kunsan.mybook.activities.ImageDetailActivity"
+            android:label="ImageDetailActivity" >
+        </activity>
+
+    </application>
+
+</manifest>
